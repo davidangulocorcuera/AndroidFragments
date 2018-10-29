@@ -39,7 +39,7 @@ public class TextViewFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.text_fragment_layout, container, false);
-        ButterKnife.bind(view);
+        ButterKnife.bind(this,view);
         updateView(str_textForSend);
         return view;
     }

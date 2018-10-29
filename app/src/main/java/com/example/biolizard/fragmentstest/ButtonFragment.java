@@ -33,8 +33,9 @@ public class ButtonFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.button_fragment_layout, container, false);
+        ButterKnife.bind(this, view);
 
-        ButterKnife.bind(view);
+        clickListener();
         return  view;
     }
     @Override
